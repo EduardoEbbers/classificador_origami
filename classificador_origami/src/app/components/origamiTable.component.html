@@ -1,0 +1,43 @@
+<table class="table table-sm table-bordered table-striped">
+    <thead class="table-light">
+        <tr>
+            <th></th>
+            <th>nome</th>
+            <th>pagina</th>
+            <th>livro</th>
+            <th>ano</th>
+            <th>autor</th>
+            <th>concluido</th>
+            <th>tipo</th>
+            <th>dificuldade</th>
+            <th>tamanhoFolhaInicial</th>
+            <th>tamanhoFolhaFinal</th>
+            <th>tempo</th>
+            <th>comentario</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *oriFor="let origami of getOrigamis(); let i=index">
+            <td>{{i + 1}}</td>
+            <td>{{origami.nome}}</td>
+            <td>{{origami.pagina}}</td>
+            <td>{{origami.livro}}</td>
+            <td>{{origami.ano}}</td>
+            <td>{{origami.autor}}</td>
+            <td>{{origami.concluido}}</td>
+            <td>{{origami.tipo}}</td>
+            <td>{{origami.dificuldade}}</td>
+            <td>{{origami.tamanhoFolhaInicial}}</td>
+            <td>{{origami.tamanhoFolhaFinal}}</td>
+            <td>{{origami.tempo}}</td>
+            <td>{{origami.comentario}}</td>
+
+            <td class="text-center">
+                <button class="btn btn-danger btn-sm" (click)="deleteOrigami(origami.id)">
+                    Delete
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

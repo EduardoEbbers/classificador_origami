@@ -1,0 +1,8 @@
+<div class="form-group">
+    <label>Discount</label>
+    <ng-template [ngIf]="discounter.discount || false">
+        <input type="number" 
+            class="form-control"
+            [(ngModel)]="discounter!.discount">
+    </ng-template>
+</div>

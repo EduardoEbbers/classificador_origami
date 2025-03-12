@@ -1,0 +1,76 @@
+<form #form="ngForm" (ngSubmit)="submitForm(form)">
+    <div class="form-group">
+        <label>Nome</label>
+        <input class="form-control" 
+            name="nome" 
+            [(ngModel)]="newOrigami.nome">
+    </div>
+    <div class="form-group">
+        <label>Página</label>
+        <input class="form-control" 
+            name="pagina" 
+            [(ngModel)]="newOrigami.pagina">
+    </div>
+    <div class="form-group">
+        <label>Livro</label>
+        <input class="form-control" 
+            name="livro" 
+            [(ngModel)]="newOrigami.livro">
+    </div>
+    <div class="form-group">
+        <label>Ano</label>
+        <input class="form-control" 
+            name="ano" 
+            [(ngModel)]="newOrigami.ano">
+    </div>
+    <div class="form-group">
+        <label>Autor</label>
+        <input class="form-control" 
+            name="autor" 
+            [(ngModel)]="newOrigami.autor">
+    </div>
+    <div class="form-group">
+        <label>Concluído</label>
+        <input class="form-control" 
+            name="concluido" 
+            [(ngModel)]="newOrigami.concluido">
+    </div>
+    <div class="form-group">
+        <label>Tipo</label>
+        <input class="form-control" 
+            name="tipo" 
+            [(ngModel)]="newOrigami.tipo">
+    </div>
+    <div class="form-group">
+        <label>Dificuldade</label>
+        <input class="form-control" 
+            name="dificuldade" 
+            [(ngModel)]="newOrigami.dificuldade">
+    </div>
+    <div class="form-group">
+        <label>Tamanho da Folha Inicial</label>
+        <input class="form-control" 
+            name="tamanhoFolhaInicial" 
+            [(ngModel)]="newOrigami.tamanhoFolhaInicial">
+    </div>
+    <div class="form-group">
+        <label>Tamanho da Folha Final</label>
+        <input class="form-control" 
+            name="tamanhoFolhaFinal" 
+            [(ngModel)]="newOrigami.tamanhoFolhaFinal">
+    </div>
+    <div class="form-group">
+        <label>Tempo</label>
+        <input class="form-control" 
+            name="tempo" 
+            [(ngModel)]="newOrigami.tempo">
+    </div>
+    <div class="form-group">
+        <label>Comentário</label>
+        <input class="form-control" 
+            name="comentario" 
+            [(ngModel)]="newOrigami.comentario">
+    </div>
+
+    <button class="btn btn-primary mt-2" type="submit">Create</button>
+</form>
